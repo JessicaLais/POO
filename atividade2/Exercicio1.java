@@ -1,7 +1,7 @@
 package atividade2;
 import java.util.Scanner;
 
-public class Calculadora{
+public class Exercicio1{
     public static void main(String[] args){
         
         Scanner scanner = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class Calculadora{
     }
     public static void Operar(double numero1, char operador, double numero2, Scanner scanner){
         double resultado = 0.0;
-        switch (operador) {
+        switch (operador){
             case '+':
                 resultado = numero1 + numero2;
                 break;
