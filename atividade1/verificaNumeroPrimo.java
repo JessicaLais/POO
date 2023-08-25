@@ -1,26 +1,27 @@
-package POO;
-public class verificaNumeroPrimo {
+package atividade1;
 
-    public static void main(String args[]) {
-        System.out.println(verificarNumeroPrimo(13));
+public class verificaNumeroPrimo{
+    public static void main(String[] args){
+        int numero = 17; 
+        int resultado = verificadorNumeroPrimo(numero);
+        
+        if(resultado == 1){
+            System.out.println(numero + "é primo.");
+        }else{
+            System.out.println(numero + "não é primo.");
+        }
     }
 
-    /* verificaNumeroPrimo */
-    public static int verificarNumeroPrimo(Integer n) {
-        int num_dividers = 2;
-        int is_prime = 0;
-
-        if (n >= 2) {
-            for (int i = 2; i < n; i++) {
-                if (n % i == 0) {
-                    num_dividers++;
-                }
-            }
-            if (num_dividers <= 2) {
-                is_prime = 1;
+    public static int verificadorNumeroPrimo(int n){
+        if(n <= 1){
+            return 0;
+        }
+        for (int i = 2; i <= Math.sqrt(n); i++){
+            if (n % i == 0){
+                return 0; 
             }
         }
-
-        return is_prime;
+        return 1; 
     }
 }
+
