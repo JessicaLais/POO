@@ -6,9 +6,9 @@ public class verificaNumeroPrimo{
         int resultado = verificadorNumeroPrimo(numero);
         
         if(resultado == 1){
-            System.out.println(numero + "é primo.");
+            System.out.println(numero + "e primo.");
         }else{
-            System.out.println(numero + "não é primo.");
+            System.out.println(numero + "não e primo.");
         }
     }
 
