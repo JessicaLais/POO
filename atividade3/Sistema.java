@@ -22,7 +22,7 @@ public class Sistema{
             case 1:
                 System.out.print("Digite o codigo do objeto: ");
                 int codigo = scanner.nextInt();
-                scanner.nextLine();  // Consumir a quebra de linha após o próximo inteiro
+                scanner.nextLine();  
                 System.out.print("Digite o nome do objeto: ");
                 String nome = scanner.nextLine();
                 System.out.print("Digite a quantidade: ");
