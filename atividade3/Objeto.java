@@ -10,19 +10,15 @@ public class Objeto {
         this.nome = nome;
         this.quantidade = quantidade;
     }
-
     public int getCodigo(){
         return codigo;
     }
-
     public String getNome(){
         return nome;
     }
-
     public int getQuantidade(){
         return quantidade;
     }
-
     public void setQuantidade(int novaQuantidade){
         this.quantidade = novaQuantidade;
     }
